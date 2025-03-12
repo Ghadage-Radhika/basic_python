@@ -5,3 +5,20 @@ Example:
   For start = 10, end = 30:
   11, 13, 17, 19, 23, 29
 """
+start = int(input("Start number: "))
+end = int(input("End number: "))
+
+print("Prime numbers in the range:", end=" ")
+num = start
+while num <= end:
+    if num > 1:
+        is_prime = True
+        i = 2
+        while i * i <= num:
+            if num % i == 0:
+                is_prime = False
+                break
+            i += 1
+        if is_prime:
+            print(num, end=", ")
+    num += 1
