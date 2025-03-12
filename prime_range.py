@@ -7,7 +7,6 @@ Example:
 """
 start = int(input("Start number: "))
 end = int(input("End number: "))
-
 print(f"Prime numbers in the range ({start} - {end}) :", end=" ")
 num = start
 while num <= end:
