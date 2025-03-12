@@ -25,11 +25,11 @@ Example Output:
 "olleh"
 """
 def reverse_string(s):
-    reversed_s = ""
+    reversed = ""
     i = len(s) - 1
     while i >= 0:
-        reversed_s += s[i]
+        reversed += s[i]
         i -= 1
-    return reversed_s
+    return reversed
 input = input("Enter a string: ")
 print("Reversed string:", reverse_string(input))
