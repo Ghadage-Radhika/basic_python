@@ -10,16 +10,14 @@ If the array contains the numbers: [1, 2, 3, 5, 6]
 Then the missing number is 4.
 
 """
-n = int(input("Total Numbers (n): "))
-arr = list(map(int, input("Enter Array: ").split()))
-
-e_sum = n * (n + 1) // 2  # Sum of first n natural numbers
+n = int(input("Total Number (n): "))
+print("Enter Numbers in Array:")
 a_sum = 0
-
-index = 0
-while index < len(arr):
-    a_sum += arr[index]
-    index += 1
-
+count = 0
+while count < n - 1:
+    num = int(input())
+    a_sum += num
+    count += 1
+e_sum = n * (n + 1) // 2
 missing_num = e_sum - a_sum
 print("The missing number is:", missing_num)
