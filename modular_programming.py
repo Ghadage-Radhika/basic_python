@@ -33,3 +33,19 @@ def reverse_string(s):
     return reversed
 input = input("Enter a string: ")
 print("Reversed string:", reverse_string(input))
+
+"""
+3. Factorial of a Number
+Write a Python program that calculates the factorial of a number (n!). For example, the factorial of 5 is 5 * 4 * 3 * 2 * 1 = 120.
+Example Input:
+5
+Example Output:
+120
+"""
+def factorial(n):
+    fact = 1
+    for i in range(1, n + 1):
+        fact *= i
+    return fact
+num = int(input("Enter a number: "))
+print("Factorial of", num, "is:", factorial(num))
