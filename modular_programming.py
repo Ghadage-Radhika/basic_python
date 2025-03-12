@@ -15,3 +15,21 @@ def sum_of_even_numbers():
         num += 1
     return total
 print("Sum of Even Numbers: ",sum_of_even_numbers())
+
+"""
+2. Reverse a String
+Write a Python function that takes a string as input and returns the string reversed.
+Example Input:
+"hello"
+Example Output:
+"olleh"
+"""
+def reverse_string(s):
+    reversed_s = ""
+    i = len(s) - 1
+    while i >= 0:
+        reversed_s += s[i]
+        i -= 1
+    return reversed_s
+input = input("Enter a string: ")
+print("Reversed string:", reverse_string(input))
