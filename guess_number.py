@@ -25,12 +25,12 @@ import random
 
 random_number = random.randint(1, 20)  # Generate a random number between 1 and 20
 guess_count = 0
-max_guesses = 5
+max = 5
 
 print("Welcome to the Number Guessing Game!")
 print("I have selected a number between 1 and 20. Can you guess it?")
 
-while guess_count < max_guesses:
+while guess_count < max:
     try:
         guess = int(input("Enter your guess (1-20): "))
         if guess < 1 or guess > 20:
@@ -49,5 +49,5 @@ while guess_count < max_guesses:
     except ValueError:
         print("Invalid input! Please enter a valid number.")
 
-if guess_count == max_guesses and guess != random_number:
+if guess_count == max and guess != random_number:
     print("Game over! The correct number was:", random_number)
