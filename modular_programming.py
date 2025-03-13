@@ -49,3 +49,39 @@ def factorial(n):
     return fact
 num = int(input("Enter a number: "))
 print("Factorial of", num, "is:", factorial(num))
+
+"""
+4. Check if a Number is Prime
+Write a Python function that checks if a given number is prime.
+Example Input:
+7
+Example Output:
+True
+"""
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+num = int(input("Enter a number: "))
+print(f"Is {num} a prime number? {is_prime(num)}")
+
+"""
+5. Count Vowels in a String
+Write a Python program that counts the number of vowels (a, e, i, o, u) in a given string.
+Example Input:
+"programming"
+Example Output:
+3 
+"""
+def count_vowels(s):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in s:
+        if char in vowels:
+            count += 1
+    return count
+s = input("Enter a string: ")
+print(f"Number of vowels in '{s}' is: {count_vowels(s)}")
